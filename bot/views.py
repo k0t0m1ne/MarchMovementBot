@@ -32,13 +32,13 @@ def is_subscribed(chat_1id, user_1id):
 
 def task_massive():
     task = []
-    for i in range(1,21,1):
+    for i in range(1,20,1):
         task.append(i)
     randtask = []
-    for i in range(20):
-        a = random.randint(1,21)
+    for i in range(19):
+        a = random.randint(1,20)
         while a not in task:
-            a = random.randint(1,21)
+            a = random.randint(1,20)
         randtask.append(str(a))
         task.remove(a)
     return ",".join(randtask)
